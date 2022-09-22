@@ -24,7 +24,7 @@ public class JwtApplication {
 		return 	new BCryptPasswordEncoder();
 	}
 
-	/*@Bean
+	@Bean
 	CommandLineRunner run(UserService userService){
 		return args -> {
 			userService.saveRole(new Role(null,"ROLE_USER"));
@@ -45,6 +45,6 @@ public class JwtApplication {
 			userService.addRoleToUser("fer","ROLE_SUPER_ADMIN");
 
 		};
-	}*/
+	}
 
 }
